@@ -22,6 +22,8 @@ def extract_info(text, nlp):
             except ValueError:
                 pass
         elif ent.label_ == 'TIME' and not date:
+            # CARDINAL 04/25/24
+            print(ent)
             date = dateutil.parser.parse(ent.text)
 
     return date, merchant, amount, currency
