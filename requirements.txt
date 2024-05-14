@@ -1,0 +1,3 @@
+pytesseract
+spacy
+python-dateutil
