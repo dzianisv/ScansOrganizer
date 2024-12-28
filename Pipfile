@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+spacy = "*"
+python-dateutil = "*"
+pytesseract = "*"
+pillow = "*"
+langchain = "*"
+openai = "*"
+pydantic = "*"
+langchain-community = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
