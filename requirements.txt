@@ -1,3 +1,7 @@
 pytesseract
-spacy
-python-dateutil
+pillow
+langchain
+openai
+pydantic
+langchain-community
+langchain-openai
