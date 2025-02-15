@@ -2,6 +2,10 @@
 
 This is automation tool to organize scanned docs. It get's the merchant, amount paid, date from the scanned docs and receipts and rename files appropriately 
 
+
+After
+![](./doc/demo1.webp)
+
 ## quick start
 
 ```shell
