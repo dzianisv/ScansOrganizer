@@ -11,6 +11,8 @@ openai = "*"
 pydantic = "*"
 langchain-community = "*"
 langchain-openai = "*"
+pypdf2 = "*"
+pdf2image = "*"
 
 [dev-packages]
 

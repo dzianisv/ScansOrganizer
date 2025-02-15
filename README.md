@@ -8,3 +8,12 @@ This is automation tool to organize scanned docs. It get's the merchant, amount 
 pip install git+https://github.com/dzianisv/ScansOrganizer.git
 doc-organizer <path_to_image>
 ```
+
+
+## PDF support
+
+Requires `poppler` to be installed.
+
+```shell
+brew install poppler
+````
