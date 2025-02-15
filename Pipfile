@@ -12,6 +12,7 @@ langchain = "*"
 openai = "*"
 pydantic = "*"
 langchain-community = "*"
+langchain-openai = "*"
 
 [dev-packages]
 
