@@ -38,16 +38,6 @@ def main():
     parser_arg.add_argument("images", nargs="+", help="List of image paths to process")
     args = parser_arg.parse_args()
 
-    # Instantiate your LLM (OpenAI GPT, for example). 
-    # Adjust the model name if needed, e.g. "gpt-3.5-turbo" or "gpt-4".
-    # Make sure your environment variable OPENAI_API_KEY is set if needed.
-    # llm = ChatOpenAI(
-    #     temperature=0,
-    #     openai_api_key=os.environ.get("OPENAI_API_KEY"),
-    #     model_name="gpt-4o"
-    # )
-
-
     llm = init_chat_model("gpt-4o-mini", model_provider="openai")
 
     for image_path in args.images:
@@ -64,7 +54,6 @@ def main():
             continue
 
         try:
-            # it doesn't work for some reason https://genai.stackexchange.com/questions/2188/llm-with-structured-output-notimplementederror
             model_with_structured_output = llm.with_structured_output(ScannedDocumentMetadata)
             classification_result = model_with_structured_output.invoke(f"Classify the following scanned document text\n<text>{text_extracted}</text>")
             logger.info(f"{classification_result}")
